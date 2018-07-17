@@ -329,6 +329,7 @@ public:
         menuMain->addAction(actionApache);
 
         retranslateUi(MainWindow);
+        QObject::connect(search_button, SIGNAL(clicked()), MainWindow, SLOT(close()));
 
         tabWidget->setCurrentIndex(0);
 
